@@ -19,3 +19,45 @@ WARNING: IN DEVELOPMENT, NOT FOR PRODUCTION READY
 - Use as usual to set there the Nuxt files, i.e. `client/pages/index.vue`
 - Open your server in the browser `http://localhost:1337`
 - To disable the hook set at .sailsrc the value `"{ hooks: {"nuxt": false} }`
+
+## Config
+
+Create a config/nuxt file:
+
+```js
+module.exports.nuxt = {
+  // ... nuxt.config.js content
+};
+```
+
+Alternatively, to preserve the nuxt.config.js file:
+
+Create a nuxt.config.js file
+
+```js
+// nuxt.config.js
+module.exports = {
+  // ... confing content
+};
+```
+
+```js
+// config/nuxt.js
+module.exports.nuxt = require('../nuxt.config');
+```
+
+## Eslint
+
+Configure your eslint file in the cliente folder. Check example folder for more information.
+
+```
+npm i -D @nuxtjs/eslint-config
+```
+
+Create a file `client/.eslintrc`
+
+```
+{
+  "extends": ["@nuxtjs"]
+}
+```
