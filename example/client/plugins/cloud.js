@@ -18,8 +18,8 @@ export default ({ nuxtState }, inject) => {
   Cloud.setup(
     extend(data, {
       headers: {
-        'x-csrf-token': nuxtState.csrf,
-      },
+        'x-csrf-token': nuxtState.csrf
+      }
     })
   )
 

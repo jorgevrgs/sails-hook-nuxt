@@ -1,5 +1,5 @@
 export default {
-  async nuxtServerInit({ commit }, { req, beforeNuxtRender }) {
+  nuxtServerInit ({ commit }, { req, beforeNuxtRender }) {
     if (process.server) {
       beforeNuxtRender(({ nuxtState }) => {
         // Get csrf token
@@ -12,5 +12,5 @@ export default {
         commit('SET_CSRF', csrf)
       })
     }
-  },
+  }
 }
