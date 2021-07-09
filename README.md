@@ -14,13 +14,31 @@ npm i sails-hook-nuxt
 
 WARNING: IN DEVELOPMENT, NOT FOR PRODUCTION READY
 
-- Create a config file `config/nuxt.js` with content `module.exports.nuxt = {}` with the content of your `nuxt.config.js` file.
+- Create a config file `config/nuxt.js` with content `module.exports.nuxt = {}` with the content of your `nuxt.config.js` file. See [Config section](#config)
 - Create a folder `client` in your Sails app path.
 - Use as usual to set there the Nuxt files, i.e. `client/pages/index.vue`
+- Run the Sails app with `sails lift`.
 - Open your server in the browser `http://localhost:1337`
-- To disable the hook set at .sailsrc the value `"{ hooks: {"nuxt": false} }`
+- To avoid building Nuxt for other scripts disable the hook setting at `.sailsrc`with the value `"{ hooks: {"nuxt": false} }` or the env variable, i.e. `sails_hooks__nuxt=false sails run rebuild-cloud-sdk`.
+
+Check the `example` folder for more info.
+
 
 ## Config
+
+
+### Default
+
+The default configuration sets only the value of `srcDir` to `client/` folder.
+
+```js
+module.exports = {
+  srcDir: 'client'
+}
+```
+
+
+### Sails config
 
 Create a config/nuxt file:
 
@@ -29,6 +47,9 @@ module.exports.nuxt = {
   // ... nuxt.config.js content
 };
 ```
+
+
+### Nuxt.config.js
 
 Alternatively, to preserve the nuxt.config.js file:
 
