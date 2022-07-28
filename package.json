@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-nuxt",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Nuxt hook for Sails.js v1",
   "main": "lib/index.js",
   "scripts": {
