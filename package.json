@@ -1,12 +1,13 @@
 {
   "name": "sails-hook-nuxt",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Nuxt hook for Sails.js v1",
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run lint && npm run custom-tests",
     "custom-tests": "node ./node_modules/mocha/bin/mocha && echo \"Custom tests all passed.\" && echo",
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'",
+    "lint:fix": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 --fix",
     "coverage": "nyc npm test"
   },
   "repository": {
@@ -28,13 +29,13 @@
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^6.0.1",
-    "chai": "^4.2.0",
-    "eslint": "^7.18.0",
-    "mocha": "^8.2.1",
+    "@nuxtjs/eslint-config": "^10.0.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.20.0",
+    "mocha": "^10.0.0",
     "nyc": "^15.1.0",
     "sails": "^1.4.0",
-    "supertest": "^6.1.1"
+    "supertest": "^6.2.4"
   },
   "sails": {
     "isHook": true,
