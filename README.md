@@ -8,6 +8,8 @@ npm i sails-hook-nuxt
 
 ![npm](https://img.shields.io/npm/v/sails-hook-nuxt?style=for-the-badge)
 
+[![Node.js Package](https://github.com/jorgevrgs/sails-hook-nuxt/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/jorgevrgs/sails-hook-nuxt/actions/workflows/npm-publish.yml)
+
 ## How to use
 
 - Create a config file `config/nuxt.js` with content `module.exports.nuxt = {}` with the content of your `nuxt.config.js` file. See [Config section](#config)
