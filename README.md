@@ -6,13 +6,9 @@
 npm i sails-hook-nuxt
 ```
 
-![David](https://img.shields.io/david/jorgevrgs/sails-hook-nuxt?style=for-the-badge)
-
 ![npm](https://img.shields.io/npm/v/sails-hook-nuxt?style=for-the-badge)
 
 ## How to use
-
-WARNING: IN DEVELOPMENT, NOT FOR PRODUCTION READY
 
 - Create a config file `config/nuxt.js` with content `module.exports.nuxt = {}` with the content of your `nuxt.config.js` file. See [Config section](#config)
 - Create a folder `client` in your Sails app path.
@@ -23,9 +19,7 @@ WARNING: IN DEVELOPMENT, NOT FOR PRODUCTION READY
 
 Check the `example` folder for more info.
 
-
 ## Config
-
 
 ### Default
 
@@ -37,7 +31,6 @@ module.exports = {
 }
 ```
 
-
 ### Sails config
 
 Create a config/nuxt file:
@@ -47,7 +40,6 @@ module.exports.nuxt = {
   // ... nuxt.config.js content
 };
 ```
-
 
 ### Nuxt.config.js
 
